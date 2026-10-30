@@ -1,6 +1,6 @@
 ---
 name: playwright-cli-screenshot
-description: playwright-cli で高解像度のスクリーンショットを撮る。playwright-cli で細部の見た目を確認するときや、人に見せるスクリーンショットを撮るときに使う。
+description: playwright-cli で高解像度のスクリーンショットを撮る。playwright-cli で細部の見た目の確認や人に見せる画像など、高解像度のスクリーンショットが必要なときに使う。
 ---
 
 # playwright-cli-screenshot
@@ -11,7 +11,7 @@ playwright-cli のデフォルトのデバイスピクセル比は 1 で、`scre
 playwright-cli open --device "Desktop Chrome HiDPI" <url>
 ```
 
-このプリセットでは、ユーザーエージェントが Windows 版 Chrome のものに固定される。ユーザーエージェントで表示が変わるページは、実際の表示と異なる可能性がある。
+このプリセットでは、ビューポートが 1280×720 になり、ユーザーエージェントが Windows 版 Chrome のものに固定される。別のビューポートで確認していたページは、開き直すとレイアウトが変わる可能性がある。ユーザーエージェントで表示が変わるページは、実際の表示と異なる可能性がある。
 
 このセッションでも、`screenshot` は 1x の画像で保存される。高解像度で撮るときだけ `--hires` を付ける。
 
