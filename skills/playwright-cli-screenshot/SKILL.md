@@ -5,11 +5,13 @@ description: playwright-cli で高解像度のスクリーンショットを撮�
 
 # playwright-cli-screenshot
 
-playwright-cli のデフォルトのデバイスピクセル比は 1 で、`screenshot --hires` を付けても 1x の画像になる。デバイスピクセル比はセッションを開くときにしか指定できないため、高解像度で撮る可能性があるセッションは、デバイスピクセル比を 2 にする [`hires.json`](hires.json) を指定して開く。
+playwright-cli のデフォルトのデバイスピクセル比は 1 で、`screenshot --hires` を付けても 1x の画像になる。デバイスピクセル比はセッションを開くときにしか指定できないため、高解像度で撮る可能性があるセッションは、デバイスピクセル比が 2 のデバイスプリセットを指定して開く。
 
 ```sh
-playwright-cli open --config <このスキルのディレクトリ>/hires.json <url>
+playwright-cli open --device "Desktop Chrome HiDPI" <url>
 ```
+
+このプリセットでは、ユーザーエージェントが Windows 版 Chrome のものに固定される。ユーザーエージェントで表示が変わるページは、実際の表示と異なる可能性がある。
 
 このセッションでも、`screenshot` は 1x の画像で保存される。高解像度で撮るときだけ `--hires` を付ける。
 
@@ -19,4 +21,4 @@ playwright-cli screenshot --hires
 
 `--hires` の画像はピクセル数が 4 倍になり、読み込むとトークンを多く消費する。動作確認やエージェントが内容を読むためのスクリーンショットは、`--hires` を付けずに撮る。
 
-デバイスピクセル比 1 で開いたセッションで高解像度の画像が必要になったときは、`hires.json` を指定して開き直す。
+デバイスピクセル比 1 で開いたセッションで高解像度の画像が必要になったときは、`--device "Desktop Chrome HiDPI"` を指定して開き直す。
