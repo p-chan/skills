@@ -15,7 +15,7 @@ description: playwright-cli で高解像度のスクリーンショットを撮�
 playwright-cli eval "devicePixelRatio"
 ```
 
-`2` でなければ、デバイスピクセル比が 2 のデバイスプリセット `Desktop Chrome HiDPI` を指定して開き直す。開き直すと入力中のフォームなどのページ上の状態は失われる。Cookie と localStorage は、開き直す前に `state-save` で保存し、開き直したあとに `state-load` で復元してから再読み込みする。保存したファイルには Cookie が含まれるため、復元したら削除する。
+`1` なら、デバイスピクセル比が 2 のデバイスプリセット `Desktop Chrome HiDPI` を指定して開き直す。開き直すと入力中のフォームなどのページ上の状態は失われる。Cookie と localStorage は、開き直す前に `state-save` で保存し、開き直したあとに `state-load` で復元してから再読み込みする。保存したファイルには Cookie が含まれるため、復元したら削除する。
 
 ```sh
 playwright-cli state-save state.json
@@ -23,6 +23,7 @@ playwright-cli close
 playwright-cli open --device "Desktop Chrome HiDPI" <url>
 playwright-cli state-load state.json
 playwright-cli reload
+rm state.json
 ```
 
 `Desktop Chrome HiDPI` では、ビューポートが 1280×720 になり、ユーザーエージェントが Windows 版 Chrome のものに固定される。ビューポートやユーザーエージェントで表示が変わるページは、元のセッションと異なる表示になる可能性がある。
