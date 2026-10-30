@@ -1,6 +1,7 @@
 ---
 name: playwright-cli-screenshot
 description: playwright-cli で高解像度のスクリーンショットを撮る。playwright-cli でユーザーや他人が見るスクリーンショットを撮るときに使う。
+compatibility: playwright-cli が必要です
 ---
 
 # playwright-cli-screenshot
