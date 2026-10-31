@@ -1,6 +1,6 @@
 ---
 name: setup-repo
-description: GitHub リポジトリを設定する。マージ方式、マージ後のブランチ自動削除、デフォルトブランチのルールセットを設定する。GitHub リポジトリを作成したときに使う。
+description: GitHub リポジトリを設定する。GitHub リポジトリを作成したときに使う。
 ---
 
 # GitHub リポジトリの設定
