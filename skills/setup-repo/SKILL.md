@@ -1,6 +1,6 @@
 ---
 name: setup-repo
-description: GitHub リポジトリを設定する。GitHub リポジトリを作成したときに使う。
+description: GitHub リポジトリを初期設定する。GitHub リポジトリを作成したときに使う。
 ---
 
 # GitHub リポジトリの設定
