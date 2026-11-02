@@ -1,6 +1,6 @@
 ---
 name: codex-review
-description: Codex にレビューを依頼し、指摘を妥当性、頻度、深刻さ、修正コストで判定する。修正を任されたときは、直す価値のあるものだけ反映する。Codex にレビューしてもらうときに使う。
+description: Codex にレビューを依頼し、指摘を妥当性、頻度、深刻さ、修正コストで判定する。修正を任されたときは、直す価値のあるものだけ反映する。Claude Code から Codex にレビューしてもらうときに使う。
 compatibility: Claude Code と openai-codex プラグインが必要です
 ---
 
