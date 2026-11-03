@@ -16,3 +16,7 @@ description: GitHub Actions のワークフローを書く。ワークフロー�
 ## ジョブの粒度
 
 フォーマットチェック、リント、型チェック、テスト、ビルドなどの検証は、それぞれ別のジョブにする。どれが失敗したかを PR のステータスチェック一覧で判別できる。
+
+## Action ごとのリファレンス
+
+- `actions/setup-node` を使うときは、[references/setup-node.md](references/setup-node.md) を読む
