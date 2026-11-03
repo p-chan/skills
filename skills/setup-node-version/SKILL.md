@@ -1,6 +1,6 @@
 ---
-name: node-version
-description: リポジトリの Node.js バージョンを固定する。`.node-version` を作成・更新するときや、Node.js のバージョンを指定するときに使う。
+name: setup-node-version
+description: リポジトリの Node.js バージョンを固定する。`.node-version` で Node.js のバージョンを新しく固定するときに使う。
 ---
 
 # Node.js
