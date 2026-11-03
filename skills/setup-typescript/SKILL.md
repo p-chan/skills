@@ -9,7 +9,7 @@ description: TypeScript を導入し、`@tsconfig/bases` のベースに `@tscon
 
 - 型チェックの対象になる各 tsconfig が、選定したベースと `@tsconfig/strictest` を `extends` し、リポジトリのソースを指す `include` を持っている
 - `typecheck` スクリプトが成功する
-- GitHub Actions があるときは、`typecheck` も実行している
+- GitHub Actions があるときは、`typecheck` を実行している
 
 ## ベースの選定
 
