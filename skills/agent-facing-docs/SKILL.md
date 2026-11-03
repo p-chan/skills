@@ -9,6 +9,8 @@ description: エージェント向け文書を作成・改善する。AGENTS.md�
 
 Skill を扱う場合は、固有のルールについて `references/skills.md` を読む。
 
+指示ファイルを扱う場合は、固有のルールについて `references/instruction-files.md` を読む。
+
 ## 情報の配置
 
 情報は、役割や必要になる条件に応じて配置する。
