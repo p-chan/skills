@@ -5,6 +5,8 @@ description: GitHub Actions のワークフローを書く。ワークフロー�
 
 # GitHub Actions
 
+このスキルは新しく書く部分に適用する。既存の部分は、依頼があるときに変える。
+
 ## Actions の固定
 
 外部の Actions は SHA で固定し、タグをコメントで残す。
