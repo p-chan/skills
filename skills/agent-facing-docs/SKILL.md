@@ -7,9 +7,9 @@ description: エージェント向け文書を作成・改善する。AGENTS.md�
 
 エージェント向け文書は、エージェントが必要な情報を、必要なときに、必要なだけ、確実に得られるように設計する。
 
-Skill を扱う場合は、固有のルールについて `references/skills.md` を読む。
-
 指示ファイルを扱う場合は、固有のルールについて `references/instruction-files.md` を読む。
+
+Skill を扱う場合は、固有のルールについて `references/skills.md` を読む。
 
 ## 情報の配置
 
