@@ -22,3 +22,4 @@ description: GitHub Actions のワークフローを書く。ワークフロー�
 ## Action ごとのリファレンス
 
 - `actions/setup-node` を使うときは、[references/setup-node.md](references/setup-node.md) を読む
+- `pnpm/action-setup` を使うときは、[references/pnpm-action-setup.md](references/pnpm-action-setup.md) を読む
