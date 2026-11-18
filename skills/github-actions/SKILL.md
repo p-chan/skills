@@ -7,6 +7,16 @@ description: GitHub Actions のワークフローを書く。ワークフロー�
 
 このスキルは新しく書く部分に適用する。既存の部分は、依頼があるときに変える。
 
+## ジョブの粒度
+
+フォーマットチェック、リント、型チェック、テスト、ビルドなどの検証は、それぞれ別のジョブにする。どれが失敗したかを PR のステータスチェック一覧で判別できる。
+
+## ランナーの選択
+
+ランナーは、ジョブが必要とするリソースや機能を満たす中で最も小さいものを選ぶ。
+
+たとえば、軽量で短時間に終わるジョブには `ubuntu-slim` を選ぶ。各ランナーの仕様と制約は、選ぶときに [GitHub-hosted runners reference](https://docs.github.com/en/actions/reference/runners/github-hosted-runners) で確認する。
+
 ## Actions の固定
 
 外部の Actions は SHA で固定し、タグをコメントで残す。
@@ -14,10 +24,6 @@ description: GitHub Actions のワークフローを書く。ワークフロー�
 ```yaml
 - uses: actions/checkout@<SHA> # <最新タグ>
 ```
-
-## ジョブの粒度
-
-フォーマットチェック、リント、型チェック、テスト、ビルドなどの検証は、それぞれ別のジョブにする。どれが失敗したかを PR のステータスチェック一覧で判別できる。
 
 ## Action ごとのリファレンス
 
