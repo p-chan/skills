@@ -11,7 +11,7 @@ description: xcodebuild や simctl で、iOS シミュレーターを使って�
 
 ### 既定の端末
 
-既定では、最新の無印 iPhone と最新の無印 iPad だけを使う。`simctl list devices available` の先頭など、たまたま目についた端末は使わない。
+既定では、最新の無印 iPhone と最新の無印 iPad だけを使う。
 
 `xcrun simctl list devicetypes` は新しい機種から順に並ぶので、次の条件に最初に一致する機種を使う。
 
@@ -31,16 +31,3 @@ iPad の動作確認が求められていないときは、iPhone だけを使�
 - 既存の端末: `xcrun simctl erase <UDID>` で初期化する
 - 作成した端末: `xcrun simctl delete <UDID>` で削除する
 
-## 端末の指定
-
-`xcodebuild` では、名前で指定する。
-
-```sh
-xcodebuild test -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest' ...
-```
-
-`simctl` で UDID が必要なときは、名前に完全一致する端末から取る。
-
-```sh
-xcrun simctl list devices available -j | jq -r '.devices[][] | select(.name == "iPhone 17") | .udid' | head -1
-```
